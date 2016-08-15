@@ -8,6 +8,11 @@
         return {
           count: 0
         }
+      },
+      events: {
+        increment () {
+          this.count ++
+        }
       }
     }
 </script>
