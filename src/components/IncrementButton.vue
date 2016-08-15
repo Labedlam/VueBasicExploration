@@ -7,13 +7,12 @@
     export default {
       data () {
         return {
-          sharedState: store.state
+          sharedState: store
         }
       },
       methods: {
         activate () {
-          console.log('+1 Pressed')
-          this.sharedState.counter += 1
+          this.sharedState.increment(this.sharedState.state.counter)
         }
       }
     }
